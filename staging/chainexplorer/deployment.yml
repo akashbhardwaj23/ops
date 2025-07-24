@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: chain-explorer-staging
-          image: akashbhardwaj24/chainexplorer
+          image: akashbhardwaj24/chainexplorer:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
