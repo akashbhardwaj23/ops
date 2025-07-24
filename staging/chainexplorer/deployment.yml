@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ChainExplorer-staging
+  labels:
+    app: chain-explorer-staging
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: chain-explorer-staging
+  template:
+    metadata:
+      labels:
+        app: chain-explorer-staging
+    spec:
+      containers:
+        - name: chain-explorer-staging
+          image: akashbhardwaj24/chainexplorer
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+
