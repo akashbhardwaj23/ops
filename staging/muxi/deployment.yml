@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: muxi-frontend-staging
-          image: akashbhardwaj24/muxi-frontend:latest
+          image: akashbhardwaj24/muxi-frontend:17b6cedfdd9586c2a61379e84e286667ffcd8b10
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
         - name: muxi-backend-staging
-          image: akashbhardwaj24/muxi-backend:latest
+          image: akashbhardwaj24/muxi-backend:17b6cedfdd9586c2a61379e84e286667ffcd8b10
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
